@@ -1,0 +1,7 @@
+.todo-card-container {
+    width: 25vw;
+    height: 30rem;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
