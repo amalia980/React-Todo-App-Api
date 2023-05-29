@@ -1,7 +1,16 @@
 .todo-card-container {
-    width: 25vw;
+    width: 20rem;
     height: 30rem;
-    background-color: antiquewhite;
+    background-color: #fff4e8;
     border-radius: 5px;
     margin: 0 auto;
+    margin-top: 1rem;
+    padding: 15px;
+    overflow-y: auto;
+    font-weight: 501;
+  }
+
+  .nothing-added-span {
+    margin-top: -15px;
+    color: #1e003f73;
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Todo.css"
 
 const Todo = ({ data, setDisplayData, displayData}) => {
   
@@ -28,19 +29,21 @@ const Todo = ({ data, setDisplayData, displayData}) => {
 
   if (isEditing) {
     return (
-      <div>
-        <input type="text" value={val} onChange={handleInput} />
-        <button onClick={handleSave}>save</button>
+      <div className="todo-item">
+        <input className="input-edit" type="text" value={val} onChange={handleInput} />
+        <button className="save-btn" onClick={handleSave}>SAVE</button>
       </div>
     )
   }
 
   return (
-    <div>
+    <div className="todo-item">
       <span>{val}</span>
-      <button onClick={handleEdit}>edit</button>
-      <button onClick={() => handleDelete(data)}>delete</button>
-    </div>
+      <div>
+      <button className="edit-btn" onClick={handleEdit}>EDIT</button>
+      <button  className="delete-btn" onClick={() => handleDelete(data)}>DELETE</button>
+      </div>
+      </div>
   );
 };
 

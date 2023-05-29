@@ -5,24 +5,24 @@ import Todo from "./Todo";
 const TodoList = ({ displayData, setDisplayData }) => {
 
     return (
-        <div>
-            <div className='todo-card-container'>
+        <div className='todo-card-container'>
                 {displayData.length > 0 ? (
                     displayData.map((data, index) => {
                         return (
-                            <div>
+                            <div key={index} data-testid="todo-item"
+                            >
                                 <Todo
-                                    key={index}
                                     data={data}
                                     displayData={displayData}
                                     setDisplayData={setDisplayData} />
                         </div>
                     )})
                 ) : (
-                        <p>No todo added...</p>
+                        <div className="nothing-added-span">
+                            <p>No todo added...</p>
+                            </div>
                 )}
-            </div>
-        </div>
+                </div>
     );
 }
 

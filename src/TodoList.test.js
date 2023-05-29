@@ -4,9 +4,9 @@ import TodoList from "./TodoList";
 
 test("renders todo list with items", () => {
   const displayData = [
-    { name: "Task 1" },
-    { name: "Task 2" },
-    { name: "Task 3" },
+    { name: "Pokemon 1" },
+    { name: "Pokemon 2" },
+    { name: "Pokemon 3" },
   ];
 
   render(<TodoList displayData={displayData} />);
